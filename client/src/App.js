@@ -4,8 +4,6 @@ import Login from './comps/Login';
 import Profile from './comps/Profile';
 import Dashboard from './comps/Dashboard';
 import ProtectedRoute from './ProtectedRoute'
-import {useDispatch, useSelector} from "react-redux";
-import { getObj } from './redux/userSlice';
 import axios from 'axios';
 
 function App() {
