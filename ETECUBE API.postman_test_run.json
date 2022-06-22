@@ -1,0 +1,1423 @@
+{
+	"id": "4162e730-d286-e314-99a6-bc4161689219",
+	"name": "ETECUBE API",
+	"allTests": [],
+	"timestamp": 1655807895940,
+	"collection_id": "55cfc362-7b21-4e88-e181-2ec031499d71",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "0",
+	"data": [],
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "55cfc362-7b21-4e88-e181-2ec031499d71",
+		"name": "ETECUBE API",
+		"description": "",
+		"order": [
+			"8b5ee130-c5be-5adc-c124-766542c6a27e",
+			"d87f23b6-c75e-146d-aa51-84bc3960b945",
+			"622bb67c-6dd9-0993-ab57-a5d4eefe6c10",
+			"df839a7e-d28f-884f-16e2-57e021a2542b",
+			"4088e863-054d-7930-57f1-8bf78c3b7518",
+			"3c016827-b83a-53bb-c4d9-ad603f3964fd",
+			"e24243e9-8d42-328a-12d2-f5e9fb2c5028",
+			"cb688d5f-27f3-b753-e7ac-afc20d09f0f4",
+			"5ecf90d8-2791-1e62-64e1-e9d061667302",
+			"e4ffb31c-08d0-383a-4e9d-4c354fdd01b3",
+			"c12f76e7-09b1-3c03-c5e9-7394b013fe25",
+			"8019c8d2-29d6-0c23-9c26-d7ad54c07806",
+			"f04651cd-bf31-ed0d-0155-a14cba7f9b1a",
+			"e355f10b-2313-d418-f313-ddeb73de5095",
+			"3faa16c7-4364-9d29-9079-decd3dad5cab",
+			"3b3a7389-de49-7587-61db-4fa09ad22e50",
+			"931698f2-6b3d-f9ab-902c-1a23401d0f9b",
+			"64320c5d-2866-84b8-0c7d-18e428966a72",
+			"72c4b1bb-0958-9daf-5908-1353c0094b8a",
+			"6f04d166-808a-c3e0-d9ac-0f8952b9ac20"
+		],
+		"folders": [],
+		"folders_order": [],
+		"requests": [
+			{
+				"id": "3b3a7389-de49-7587-61db-4fa09ad22e50",
+				"headers": "Content-Type: application/json\n",
+				"headerData": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "",
+						"enabled": true
+					}
+				],
+				"url": "http://localhost:5000/todo/edittodo",
+				"queryParams": [],
+				"pathVariables": {},
+				"pathVariableData": [],
+				"preRequestScript": null,
+				"method": "PUT",
+				"collectionId": "55cfc362-7b21-4e88-e181-2ec031499d71",
+				"data": "{\n\t\"userId\":1,\n\t\"todoId\":1,\n\t\"text\":\"Content was changed.\"\n}",
+				"dataMode": "raw",
+				"name": "Edit Todo",
+				"description": "",
+				"descriptionFormat": "html",
+				"time": 1655805640453,
+				"version": 2,
+				"responses": [],
+				"tests": null,
+				"currentHelper": "normal",
+				"helperAttributes": {}
+			},
+			{
+				"id": "3c016827-b83a-53bb-c4d9-ad603f3964fd",
+				"headers": "",
+				"headerData": [],
+				"url": "http://localhost:5000/user/loggedin",
+				"queryParams": [],
+				"pathVariables": {},
+				"pathVariableData": [],
+				"preRequestScript": null,
+				"method": "GET",
+				"collectionId": "55cfc362-7b21-4e88-e181-2ec031499d71",
+				"data": null,
+				"dataMode": "params",
+				"name": "Logged in",
+				"description": "",
+				"descriptionFormat": "html",
+				"time": 1655804381361,
+				"version": 2,
+				"responses": [],
+				"tests": null,
+				"currentHelper": "normal",
+				"helperAttributes": {}
+			},
+			{
+				"id": "3faa16c7-4364-9d29-9079-decd3dad5cab",
+				"headers": "Content-Type: application/json\n",
+				"headerData": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "",
+						"enabled": true
+					}
+				],
+				"url": "http://localhost:5000/todo/createtodo",
+				"queryParams": [],
+				"pathVariables": {},
+				"pathVariableData": [],
+				"preRequestScript": null,
+				"method": "POST",
+				"collectionId": "55cfc362-7b21-4e88-e181-2ec031499d71",
+				"data": "{\n\t\"creatorId\":1,\n\t\"teamId\":2,\n\t\"text\":\"New Todo Content\",\n\t\"isPublic\":true\n}",
+				"dataMode": "raw",
+				"name": "Create Todo",
+				"description": "",
+				"descriptionFormat": "html",
+				"time": 1655805507783,
+				"version": 2,
+				"responses": [],
+				"tests": null,
+				"currentHelper": "normal",
+				"helperAttributes": {}
+			},
+			{
+				"id": "4088e863-054d-7930-57f1-8bf78c3b7518",
+				"headers": "Content-Type: application/json\n",
+				"headerData": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "",
+						"enabled": true
+					}
+				],
+				"url": "http://localhost:5000/user/login",
+				"queryParams": [],
+				"pathVariables": {},
+				"pathVariableData": [],
+				"preRequestScript": null,
+				"method": "POST",
+				"collectionId": "55cfc362-7b21-4e88-e181-2ec031499d71",
+				"data": "{\n\t\"email\": \"ahmet@gmail.com\",\n\t\"password\":\"1234\"\n}",
+				"dataMode": "raw",
+				"name": "Login",
+				"description": "",
+				"descriptionFormat": "html",
+				"time": 1655804333876,
+				"version": 2,
+				"responses": [],
+				"tests": null,
+				"currentHelper": "normal",
+				"helperAttributes": {}
+			},
+			{
+				"id": "5ecf90d8-2791-1e62-64e1-e9d061667302",
+				"headers": "Content-Type: application/json\n",
+				"headerData": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "",
+						"enabled": true
+					}
+				],
+				"url": "http://localhost:5000/team/createteam",
+				"queryParams": [],
+				"pathVariables": {},
+				"pathVariableData": [],
+				"preRequestScript": null,
+				"method": "POST",
+				"collectionId": "55cfc362-7b21-4e88-e181-2ec031499d71",
+				"data": "{\n\t\"id\":1,\n\t\"name\":\"New Team\"\n}",
+				"dataMode": "raw",
+				"name": "Create Team",
+				"description": "",
+				"descriptionFormat": "html",
+				"time": 1655804889800,
+				"version": 2,
+				"responses": [],
+				"tests": null,
+				"currentHelper": "normal",
+				"helperAttributes": {}
+			},
+			{
+				"id": "622bb67c-6dd9-0993-ab57-a5d4eefe6c10",
+				"headers": "Content-Type: application/json\n",
+				"headerData": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "",
+						"enabled": true
+					}
+				],
+				"url": "http://localhost:5000/user/register",
+				"queryParams": [],
+				"preRequestScript": null,
+				"pathVariables": {},
+				"pathVariableData": [],
+				"method": "POST",
+				"data": "{\n\t\"fullname\":\"Feyza Aydın\",\n\t\"email\":\"feyza@gmail.com\",\n\t\"password\":\"1234\",\n\t\"confirmPassword\":\"1234\"\n}",
+				"dataMode": "raw",
+				"version": 2,
+				"tests": null,
+				"currentHelper": "normal",
+				"helperAttributes": {},
+				"time": 1655804248312,
+				"name": "Register 2",
+				"description": "",
+				"collectionId": "55cfc362-7b21-4e88-e181-2ec031499d71",
+				"responses": []
+			},
+			{
+				"id": "64320c5d-2866-84b8-0c7d-18e428966a72",
+				"headers": "Content-Type: application/json\n",
+				"headerData": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "",
+						"enabled": true
+					}
+				],
+				"url": "http://localhost:5000/todo/toggleispublic",
+				"queryParams": [],
+				"pathVariables": {},
+				"pathVariableData": [],
+				"preRequestScript": null,
+				"method": "PUT",
+				"collectionId": "55cfc362-7b21-4e88-e181-2ec031499d71",
+				"data": "{\n\t\"todoId\":1\n}",
+				"dataMode": "raw",
+				"name": "Toggle isPublic",
+				"description": "",
+				"descriptionFormat": "html",
+				"time": 1655805828196,
+				"version": 2,
+				"responses": [],
+				"tests": null,
+				"currentHelper": "normal",
+				"helperAttributes": {}
+			},
+			{
+				"id": "6f04d166-808a-c3e0-d9ac-0f8952b9ac20",
+				"headers": "",
+				"headerData": [],
+				"url": "http://localhost:5000/todo/removetodo/2/1/1",
+				"queryParams": [],
+				"pathVariables": {},
+				"pathVariableData": [],
+				"preRequestScript": null,
+				"method": "DELETE",
+				"collectionId": "55cfc362-7b21-4e88-e181-2ec031499d71",
+				"data": null,
+				"dataMode": "params",
+				"name": "Remove Todo",
+				"description": "",
+				"descriptionFormat": "html",
+				"time": 1655806021413,
+				"version": 2,
+				"responses": [],
+				"tests": null,
+				"currentHelper": "normal",
+				"helperAttributes": {}
+			},
+			{
+				"id": "72c4b1bb-0958-9daf-5908-1353c0094b8a",
+				"headers": "Content-Type: application/json\n",
+				"headerData": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "",
+						"enabled": true
+					}
+				],
+				"url": "http://localhost:5000/todo/filtertodosbyuserid",
+				"queryParams": [],
+				"pathVariables": {},
+				"pathVariableData": [],
+				"preRequestScript": null,
+				"method": "POST",
+				"collectionId": "55cfc362-7b21-4e88-e181-2ec031499d71",
+				"data": "{\n\t\"userId\": 1,\n\t\"teamId\": 2\n}",
+				"dataMode": "raw",
+				"name": "Filter Todos by userID",
+				"description": "",
+				"descriptionFormat": "html",
+				"time": 1655805940717,
+				"version": 2,
+				"responses": [],
+				"tests": null,
+				"currentHelper": "normal",
+				"helperAttributes": {}
+			},
+			{
+				"id": "8019c8d2-29d6-0c23-9c26-d7ad54c07806",
+				"headers": "",
+				"headerData": [],
+				"url": "http://localhost:5000/team/removemember/2/1/1",
+				"queryParams": [],
+				"pathVariables": {},
+				"pathVariableData": [],
+				"preRequestScript": null,
+				"method": "DELETE",
+				"collectionId": "55cfc362-7b21-4e88-e181-2ec031499d71",
+				"data": null,
+				"dataMode": "params",
+				"name": "Remove Member",
+				"description": "",
+				"descriptionFormat": "html",
+				"time": 1655805210511,
+				"version": 2,
+				"responses": [],
+				"tests": null,
+				"currentHelper": "normal",
+				"helperAttributes": {}
+			},
+			{
+				"id": "8b5ee130-c5be-5adc-c124-766542c6a27e",
+				"headers": "Content-Type: application/json\n",
+				"headerData": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "",
+						"enabled": true
+					}
+				],
+				"url": "http://localhost:5000/user/register",
+				"queryParams": [],
+				"pathVariables": {},
+				"pathVariableData": [],
+				"preRequestScript": null,
+				"method": "POST",
+				"collectionId": "55cfc362-7b21-4e88-e181-2ec031499d71",
+				"data": "{\n\t\"fullname\":\"Ahmet Özdemir\",\n\t\"email\":\"ahmet@gmail.com\",\n\t\"password\":\"1234\",\n\t\"confirmPassword\":\"1234\"\n}",
+				"dataMode": "raw",
+				"name": "Register",
+				"description": "",
+				"descriptionFormat": "html",
+				"time": 1655804190347,
+				"version": 2,
+				"responses": [],
+				"tests": null,
+				"currentHelper": "normal",
+				"helperAttributes": {}
+			},
+			{
+				"id": "931698f2-6b3d-f9ab-902c-1a23401d0f9b",
+				"headers": "Content-Type: application/json\n",
+				"headerData": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "",
+						"enabled": true
+					}
+				],
+				"url": "http://localhost:5000/todo/toggleiscompleted",
+				"queryParams": [],
+				"pathVariables": {},
+				"pathVariableData": [],
+				"preRequestScript": null,
+				"method": "PUT",
+				"collectionId": "55cfc362-7b21-4e88-e181-2ec031499d71",
+				"data": "{\n\t\"todoId\":1\n}",
+				"dataMode": "raw",
+				"name": "Toggle isCompleted",
+				"description": "",
+				"descriptionFormat": "html",
+				"time": 1655805744205,
+				"version": 2,
+				"responses": [],
+				"tests": null,
+				"currentHelper": "normal",
+				"helperAttributes": {}
+			},
+			{
+				"id": "c12f76e7-09b1-3c03-c5e9-7394b013fe25",
+				"headers": "Content-Type: application/json\n",
+				"headerData": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "",
+						"enabled": true
+					}
+				],
+				"url": "http://localhost:5000/team/makeadmin",
+				"queryParams": [],
+				"pathVariables": {},
+				"pathVariableData": [],
+				"preRequestScript": null,
+				"method": "PUT",
+				"collectionId": "55cfc362-7b21-4e88-e181-2ec031499d71",
+				"data": "{\n\t\"id\":1,\n\t\"teamId\":2,\n\t\"memberId\":2\n}",
+				"dataMode": "raw",
+				"name": "Make Admin",
+				"description": "",
+				"descriptionFormat": "html",
+				"time": 1655805141167,
+				"version": 2,
+				"responses": [],
+				"tests": null,
+				"currentHelper": "normal",
+				"helperAttributes": {}
+			},
+			{
+				"id": "cb688d5f-27f3-b753-e7ac-afc20d09f0f4",
+				"headers": "Content-Type: application/json\n",
+				"headerData": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "",
+						"enabled": true
+					}
+				],
+				"url": "http://localhost:5000/user/resetpassword",
+				"queryParams": [],
+				"preRequestScript": null,
+				"pathVariables": {},
+				"pathVariableData": [],
+				"method": "PUT",
+				"data": "{\n\t\"password\":\"123456789\",\n\t\"confirmPassword\":\"123456789\",\n\t\"id\":1\n}",
+				"dataMode": "raw",
+				"version": 2,
+				"tests": null,
+				"currentHelper": "normal",
+				"helperAttributes": {},
+				"time": 1655806594434,
+				"name": "Reset Password",
+				"description": "",
+				"collectionId": "55cfc362-7b21-4e88-e181-2ec031499d71",
+				"responses": []
+			},
+			{
+				"id": "d87f23b6-c75e-146d-aa51-84bc3960b945",
+				"headers": "Content-Type: application/json\n",
+				"headerData": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "",
+						"enabled": true
+					}
+				],
+				"url": "http://localhost:5000/user/signout",
+				"queryParams": [],
+				"pathVariables": {},
+				"pathVariableData": [],
+				"preRequestScript": null,
+				"method": "GET",
+				"collectionId": "55cfc362-7b21-4e88-e181-2ec031499d71",
+				"data": "",
+				"dataMode": "raw",
+				"name": "Sign Out",
+				"description": "",
+				"descriptionFormat": "html",
+				"time": 1655775350661,
+				"version": 2,
+				"responses": [],
+				"tests": null,
+				"currentHelper": "normal",
+				"helperAttributes": {}
+			},
+			{
+				"id": "df839a7e-d28f-884f-16e2-57e021a2542b",
+				"headers": "Content-Type: application/json\n",
+				"headerData": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "",
+						"enabled": true
+					}
+				],
+				"url": "http://localhost:5000/user/signout",
+				"queryParams": [],
+				"pathVariables": {},
+				"pathVariableData": [],
+				"preRequestScript": null,
+				"method": "GET",
+				"collectionId": "55cfc362-7b21-4e88-e181-2ec031499d71",
+				"data": "",
+				"dataMode": "raw",
+				"name": "Sign Out 2",
+				"description": "",
+				"descriptionFormat": "html",
+				"time": 1655775350661,
+				"version": 2,
+				"responses": [],
+				"tests": null,
+				"currentHelper": "normal",
+				"helperAttributes": {},
+				"isFromCollection": true
+			},
+			{
+				"id": "e24243e9-8d42-328a-12d2-f5e9fb2c5028",
+				"headers": "Content-Type: application/json\n",
+				"headerData": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "",
+						"enabled": true
+					}
+				],
+				"url": "http://localhost:5000/user/editprofile",
+				"queryParams": [],
+				"preRequestScript": null,
+				"pathVariables": {},
+				"pathVariableData": [],
+				"method": "PUT",
+				"data": "{\n\t\"id\":1,\n\t\"img\":\"https://icdn.ensonhaber.com/resimler/diger/kok/2020/08/31/IMG20200831122534.jpg\",\n\t\"email\":\"ahmet2@gmail.com\",\n\t\"fullname\":\"Ahmet M. Özdemir\"\n}",
+				"dataMode": "raw",
+				"tests": null,
+				"currentHelper": "normal",
+				"helperAttributes": {},
+				"time": 1655804661871,
+				"name": "Edit Profile",
+				"description": "",
+				"collectionId": "55cfc362-7b21-4e88-e181-2ec031499d71",
+				"responses": []
+			},
+			{
+				"id": "e355f10b-2313-d418-f313-ddeb73de5095",
+				"headers": "Content-Type: application/json\n",
+				"headerData": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "",
+						"enabled": true
+					}
+				],
+				"url": "http://localhost:5000/team/createteam",
+				"queryParams": [],
+				"pathVariables": {},
+				"pathVariableData": [],
+				"preRequestScript": null,
+				"method": "POST",
+				"collectionId": "55cfc362-7b21-4e88-e181-2ec031499d71",
+				"data": "{\n\t\"id\":1,\n\t\"name\":\"New Team 2\"\n}",
+				"dataMode": "raw",
+				"name": "Create Team 2",
+				"description": "",
+				"descriptionFormat": "html",
+				"time": 1655805357310,
+				"version": 2,
+				"responses": [],
+				"tests": null,
+				"currentHelper": "normal",
+				"helperAttributes": {}
+			},
+			{
+				"id": "e4ffb31c-08d0-383a-4e9d-4c354fdd01b3",
+				"headers": "Content-Type: application/json\n",
+				"headerData": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "",
+						"enabled": true
+					}
+				],
+				"url": "http://localhost:5000/team/addmember",
+				"queryParams": [],
+				"pathVariables": {},
+				"pathVariableData": [],
+				"preRequestScript": null,
+				"method": "POST",
+				"collectionId": "55cfc362-7b21-4e88-e181-2ec031499d71",
+				"data": "{\n\t\"id\":1,\n\t\"teamId\":1,\n\t\"memberId\":2\n}",
+				"dataMode": "raw",
+				"name": "Add Member",
+				"description": "",
+				"descriptionFormat": "html",
+				"time": 1655804982671,
+				"version": 2,
+				"responses": [],
+				"tests": null,
+				"currentHelper": "normal",
+				"helperAttributes": {}
+			},
+			{
+				"id": "f04651cd-bf31-ed0d-0155-a14cba7f9b1a",
+				"headers": "",
+				"headerData": [],
+				"url": "http://localhost:5000/team/removeteam/1/1",
+				"queryParams": [],
+				"pathVariables": {},
+				"pathVariableData": [],
+				"preRequestScript": null,
+				"method": "DELETE",
+				"collectionId": "55cfc362-7b21-4e88-e181-2ec031499d71",
+				"data": null,
+				"dataMode": "params",
+				"name": "Remove Team",
+				"description": "",
+				"descriptionFormat": "html",
+				"time": 1655805262694,
+				"version": 2,
+				"responses": [],
+				"tests": null,
+				"currentHelper": "normal",
+				"helperAttributes": {}
+			}
+		],
+		"timestamp": 1655769636922,
+		"synced": false,
+		"syncedFilename": "",
+		"remote_id": 0,
+		"remoteLink": "",
+		"remoteLinkUpdatedAt": null,
+		"public": false,
+		"owner": "14230784",
+		"subscribed": false,
+		"createdAt": 1655769636922,
+		"updatedAt": 1655806021435,
+		"write": true,
+		"published": false,
+		"favorite": false,
+		"permissions": {},
+		"syncedPermissions": {},
+		"sharedWithTeam": false
+	},
+	"folder": null,
+	"environment": null,
+	"globals": [],
+	"results": [
+		{
+			"id": "8b5ee130-c5be-5adc-c124-766542c6a27e",
+			"name": "Register",
+			"url": "http://localhost:5000/user/register",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				30
+			],
+			"allTests": [
+				{}
+			],
+			"time": 30,
+			"totalRequestTime": 30,
+			"iterationResults": {}
+		},
+		{
+			"id": "d87f23b6-c75e-146d-aa51-84bc3960b945",
+			"name": "Sign Out",
+			"url": "http://localhost:5000/user/signout",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				5
+			],
+			"allTests": [
+				{}
+			],
+			"time": 5,
+			"totalRequestTime": 5,
+			"iterationResults": {}
+		},
+		{
+			"id": "622bb67c-6dd9-0993-ab57-a5d4eefe6c10",
+			"name": "Register 2",
+			"url": "http://localhost:5000/user/register",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				8
+			],
+			"allTests": [
+				{}
+			],
+			"time": 8,
+			"totalRequestTime": 8,
+			"iterationResults": {}
+		},
+		{
+			"id": "df839a7e-d28f-884f-16e2-57e021a2542b",
+			"name": "Sign Out 2",
+			"url": "http://localhost:5000/user/signout",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				5
+			],
+			"allTests": [
+				{}
+			],
+			"time": 5,
+			"totalRequestTime": 5,
+			"iterationResults": {}
+		},
+		{
+			"id": "4088e863-054d-7930-57f1-8bf78c3b7518",
+			"name": "Login",
+			"url": "http://localhost:5000/user/login",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				10
+			],
+			"allTests": [
+				{}
+			],
+			"time": 10,
+			"totalRequestTime": 10,
+			"iterationResults": {}
+		},
+		{
+			"id": "3c016827-b83a-53bb-c4d9-ad603f3964fd",
+			"name": "Logged in",
+			"url": "http://localhost:5000/user/loggedin",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				7
+			],
+			"allTests": [
+				{}
+			],
+			"time": 7,
+			"totalRequestTime": 7,
+			"iterationResults": {}
+		},
+		{
+			"id": "e24243e9-8d42-328a-12d2-f5e9fb2c5028",
+			"name": "Edit Profile",
+			"url": "http://localhost:5000/user/editprofile",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				9
+			],
+			"allTests": [
+				{}
+			],
+			"time": 9,
+			"totalRequestTime": 9,
+			"iterationResults": {}
+		},
+		{
+			"id": "cb688d5f-27f3-b753-e7ac-afc20d09f0f4",
+			"name": "Reset Password",
+			"url": "http://localhost:5000/user/resetpassword",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				8
+			],
+			"allTests": [
+				{}
+			],
+			"time": 8,
+			"totalRequestTime": 8,
+			"iterationResults": {}
+		},
+		{
+			"id": "5ecf90d8-2791-1e62-64e1-e9d061667302",
+			"name": "Create Team",
+			"url": "http://localhost:5000/team/createteam",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				9
+			],
+			"allTests": [
+				{}
+			],
+			"time": 9,
+			"totalRequestTime": 9,
+			"iterationResults": {}
+		},
+		{
+			"id": "e4ffb31c-08d0-383a-4e9d-4c354fdd01b3",
+			"name": "Add Member",
+			"url": "http://localhost:5000/team/addmember",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				15
+			],
+			"allTests": [
+				{}
+			],
+			"time": 15,
+			"totalRequestTime": 15,
+			"iterationResults": {}
+		},
+		{
+			"id": "c12f76e7-09b1-3c03-c5e9-7394b013fe25",
+			"name": "Make Admin",
+			"url": "http://localhost:5000/team/makeadmin",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				7
+			],
+			"allTests": [
+				{}
+			],
+			"time": 7,
+			"totalRequestTime": 7,
+			"iterationResults": {}
+		},
+		{
+			"id": "8019c8d2-29d6-0c23-9c26-d7ad54c07806",
+			"name": "Remove Member",
+			"url": "http://localhost:5000/team/removemember/2/1/1",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				13
+			],
+			"allTests": [
+				{}
+			],
+			"time": 13,
+			"totalRequestTime": 13,
+			"iterationResults": {}
+		},
+		{
+			"id": "f04651cd-bf31-ed0d-0155-a14cba7f9b1a",
+			"name": "Remove Team",
+			"url": "http://localhost:5000/team/removeteam/1/1",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				10
+			],
+			"allTests": [
+				{}
+			],
+			"time": 10,
+			"totalRequestTime": 10,
+			"iterationResults": {}
+		},
+		{
+			"id": "e355f10b-2313-d418-f313-ddeb73de5095",
+			"name": "Create Team 2",
+			"url": "http://localhost:5000/team/createteam",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				6
+			],
+			"allTests": [
+				{}
+			],
+			"time": 6,
+			"totalRequestTime": 6,
+			"iterationResults": {}
+		},
+		{
+			"id": "3faa16c7-4364-9d29-9079-decd3dad5cab",
+			"name": "Create Todo",
+			"url": "http://localhost:5000/todo/createtodo",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				10
+			],
+			"allTests": [
+				{}
+			],
+			"time": 10,
+			"totalRequestTime": 10,
+			"iterationResults": {}
+		},
+		{
+			"id": "3b3a7389-de49-7587-61db-4fa09ad22e50",
+			"name": "Edit Todo",
+			"url": "http://localhost:5000/todo/edittodo",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				13
+			],
+			"allTests": [
+				{}
+			],
+			"time": 13,
+			"totalRequestTime": 13,
+			"iterationResults": {}
+		},
+		{
+			"id": "931698f2-6b3d-f9ab-902c-1a23401d0f9b",
+			"name": "Toggle isCompleted",
+			"url": "http://localhost:5000/todo/toggleiscompleted",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				18
+			],
+			"allTests": [
+				{}
+			],
+			"time": 18,
+			"totalRequestTime": 18,
+			"iterationResults": {}
+		},
+		{
+			"id": "64320c5d-2866-84b8-0c7d-18e428966a72",
+			"name": "Toggle isPublic",
+			"url": "http://localhost:5000/todo/toggleispublic",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				18
+			],
+			"allTests": [
+				{}
+			],
+			"time": 18,
+			"totalRequestTime": 18,
+			"iterationResults": {}
+		},
+		{
+			"id": "72c4b1bb-0958-9daf-5908-1353c0094b8a",
+			"name": "Filter Todos by userID",
+			"url": "http://localhost:5000/todo/filtertodosbyuserid",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				7
+			],
+			"allTests": [
+				{}
+			],
+			"time": 7,
+			"totalRequestTime": 7,
+			"iterationResults": {}
+		},
+		{
+			"id": "6f04d166-808a-c3e0-d9ac-0f8952b9ac20",
+			"name": "Remove Todo",
+			"url": "http://localhost:5000/todo/removetodo/2/1/1",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				9
+			],
+			"allTests": [
+				{}
+			],
+			"time": 9,
+			"totalRequestTime": 9,
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 0,
+	"totalFail": 0,
+	"totalTime": 217,
+	"lifecycle": "done",
+	"willStop": false,
+	"requests": [
+		{
+			"name": "Register",
+			"id": "8b5ee130-c5be-5adc-c124-766542c6a27e",
+			"url": "http://localhost:5000/user/register",
+			"time": 30,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {},
+			"gridTitles": [],
+			"gridData": [
+				[]
+			],
+			"tests": {}
+		},
+		{
+			"name": "Sign Out",
+			"id": "d87f23b6-c75e-146d-aa51-84bc3960b945",
+			"url": "http://localhost:5000/user/signout",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {},
+			"gridTitles": [],
+			"gridData": [
+				[]
+			],
+			"tests": {}
+		},
+		{
+			"name": "Register 2",
+			"id": "622bb67c-6dd9-0993-ab57-a5d4eefe6c10",
+			"url": "http://localhost:5000/user/register",
+			"time": 8,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {},
+			"gridTitles": [],
+			"gridData": [
+				[]
+			],
+			"tests": {}
+		},
+		{
+			"name": "Sign Out 2",
+			"id": "df839a7e-d28f-884f-16e2-57e021a2542b",
+			"url": "http://localhost:5000/user/signout",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {},
+			"gridTitles": [],
+			"gridData": [
+				[]
+			],
+			"tests": {}
+		},
+		{
+			"name": "Login",
+			"id": "4088e863-054d-7930-57f1-8bf78c3b7518",
+			"url": "http://localhost:5000/user/login",
+			"time": 10,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {},
+			"gridTitles": [],
+			"gridData": [
+				[]
+			],
+			"tests": {}
+		},
+		{
+			"name": "Logged in",
+			"id": "3c016827-b83a-53bb-c4d9-ad603f3964fd",
+			"url": "http://localhost:5000/user/loggedin",
+			"time": 7,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {},
+			"gridTitles": [],
+			"gridData": [
+				[]
+			],
+			"tests": {}
+		},
+		{
+			"name": "Edit Profile",
+			"id": "e24243e9-8d42-328a-12d2-f5e9fb2c5028",
+			"url": "http://localhost:5000/user/editprofile",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {},
+			"gridTitles": [],
+			"gridData": [
+				[]
+			],
+			"tests": {}
+		},
+		{
+			"name": "Reset Password",
+			"id": "cb688d5f-27f3-b753-e7ac-afc20d09f0f4",
+			"url": "http://localhost:5000/user/resetpassword",
+			"time": 8,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {},
+			"gridTitles": [],
+			"gridData": [
+				[]
+			],
+			"tests": {}
+		},
+		{
+			"name": "Create Team",
+			"id": "5ecf90d8-2791-1e62-64e1-e9d061667302",
+			"url": "http://localhost:5000/team/createteam",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {},
+			"gridTitles": [],
+			"gridData": [
+				[]
+			],
+			"tests": {}
+		},
+		{
+			"name": "Add Member",
+			"id": "e4ffb31c-08d0-383a-4e9d-4c354fdd01b3",
+			"url": "http://localhost:5000/team/addmember",
+			"time": 15,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {},
+			"gridTitles": [],
+			"gridData": [
+				[]
+			],
+			"tests": {}
+		},
+		{
+			"name": "Make Admin",
+			"id": "c12f76e7-09b1-3c03-c5e9-7394b013fe25",
+			"url": "http://localhost:5000/team/makeadmin",
+			"time": 7,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {},
+			"gridTitles": [],
+			"gridData": [
+				[]
+			],
+			"tests": {}
+		},
+		{
+			"name": "Remove Member",
+			"id": "8019c8d2-29d6-0c23-9c26-d7ad54c07806",
+			"url": "http://localhost:5000/team/removemember/2/1/1",
+			"time": 13,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {},
+			"gridTitles": [],
+			"gridData": [
+				[]
+			],
+			"tests": {}
+		},
+		{
+			"name": "Remove Team",
+			"id": "f04651cd-bf31-ed0d-0155-a14cba7f9b1a",
+			"url": "http://localhost:5000/team/removeteam/1/1",
+			"time": 10,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {},
+			"gridTitles": [],
+			"gridData": [
+				[]
+			],
+			"tests": {}
+		},
+		{
+			"name": "Create Team 2",
+			"id": "e355f10b-2313-d418-f313-ddeb73de5095",
+			"url": "http://localhost:5000/team/createteam",
+			"time": 6,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {},
+			"gridTitles": [],
+			"gridData": [
+				[]
+			],
+			"tests": {}
+		},
+		{
+			"name": "Create Todo",
+			"id": "3faa16c7-4364-9d29-9079-decd3dad5cab",
+			"url": "http://localhost:5000/todo/createtodo",
+			"time": 10,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {},
+			"gridTitles": [],
+			"gridData": [
+				[]
+			],
+			"tests": {}
+		},
+		{
+			"name": "Edit Todo",
+			"id": "3b3a7389-de49-7587-61db-4fa09ad22e50",
+			"url": "http://localhost:5000/todo/edittodo",
+			"time": 13,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {},
+			"gridTitles": [],
+			"gridData": [
+				[]
+			],
+			"tests": {}
+		},
+		{
+			"name": "Toggle isCompleted",
+			"id": "931698f2-6b3d-f9ab-902c-1a23401d0f9b",
+			"url": "http://localhost:5000/todo/toggleiscompleted",
+			"time": 18,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {},
+			"gridTitles": [],
+			"gridData": [
+				[]
+			],
+			"tests": {}
+		},
+		{
+			"name": "Toggle isPublic",
+			"id": "64320c5d-2866-84b8-0c7d-18e428966a72",
+			"url": "http://localhost:5000/todo/toggleispublic",
+			"time": 18,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {},
+			"gridTitles": [],
+			"gridData": [
+				[]
+			],
+			"tests": {}
+		},
+		{
+			"name": "Filter Todos by userID",
+			"id": "72c4b1bb-0958-9daf-5908-1353c0094b8a",
+			"url": "http://localhost:5000/todo/filtertodosbyuserid",
+			"time": 7,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {},
+			"gridTitles": [],
+			"gridData": [
+				[]
+			],
+			"tests": {}
+		},
+		{
+			"name": "Remove Todo",
+			"id": "6f04d166-808a-c3e0-d9ac-0f8952b9ac20",
+			"url": "http://localhost:5000/todo/removetodo/2/1/1",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {},
+			"gridTitles": [],
+			"gridData": [
+				[]
+			],
+			"tests": {}
+		}
+	],
+	"synced": false
+}
